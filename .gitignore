@@ -194,4 +194,5 @@ tags
 # End of https://www.toptal.com/developers/gitignore/api/python,linux,archlinuxpackages,vim
 
 *.yml
+*.db
 !config.example.yml

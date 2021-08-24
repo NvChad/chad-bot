@@ -4,6 +4,7 @@ import yaml, discord, sys, sqlite3, logging
 
 from cogs.joinleave import JoinLeave
 from cogs.utils import Utils
+from cogs.roles import Roles
 
 
 class Chad(commands.Bot):
@@ -68,5 +69,6 @@ async def on_ready():
 
 bot.add_cog(JoinLeave(bot))
 bot.add_cog(Utils(bot))
+bot.add_cog(Roles(bot, db, cur))
 
 bot.run()
